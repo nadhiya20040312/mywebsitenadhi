@@ -1,6 +1,146 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>my document</title>
-<p1>machine learning</p1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Sample Web Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em 2em;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            text-align: center;
+            padding: 0.5em;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 2em;
+            max-width: 900px;
+            margin: auto;
+        }
+        section {
+            margin-bottom: 2em;
+        }
+        h2 {
+            color: #333;
+        }
+        .services {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .service {
+            background: white;
+            padding: 1em;
+            border: 1px solid #ddd;
+            flex: 1 1 250px;
+            text-align: center;
+        }
+        .service i {
+            font-size: 2em;
+            color: #007BFF;
+        }
+        form {
+            background: white;
+            padding: 1em;
+            border: 1px solid #ddd;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 0.7em;
+            margin: 0.5em 0;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 0.7em 1.5em;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+    </style>
 </head>
+<body>
+
+<header>
+    <h1>My Sample Website</h1>
+    <p>Learning HTML & Building a Web Page</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<main>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to our sample web page! This site demonstrates how to structure a simple HTML page with useful content. We provide examples and learning resources for beginners diving into web development.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service">
+                <i>🌐</i>
+                <h3>Web Design</h3>
+                <p>We create clean and responsive web designs tailored to your needs.</p>
+            </div>
+            <div class="service">
+                <i>💡</i>
+                <h3>Consulting</h3>
+                <p>Need guidance on your project? Get expert advice from our team.</p>
+            </div>
+            <div class="service">
+                <i>🔧</i>
+                <h3>Development</h3>
+                <p>Custom front-end and back-end development solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Write your message..." required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 My Sample Website. All rights reserved.</p>
+</footer>
+
+</body>
 </html>
+
